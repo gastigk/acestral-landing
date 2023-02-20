@@ -10,20 +10,126 @@ NOTE:
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 
-.nav .nav-item .nav-link .user-nav .user-name {
+/* Card Ancestral */
+#card-demo-example .card .card-img-top{
+	width: 100%;
+	min-width: 288px;
+	max-width: 718px;
+	max-height: 712px;
+	margin: 0 auto;
+	text-align: center;
+	align-self: center;
+}
+
+#card-demo-example .card-body .card-title {
+	position: absolute;
+	left: 40px;
+	bottom: 1%;
+	width: calc(100% - 80px);
+	padding: 6px;
+	text-align: center;
+	font-size: calc(2rem + 7vw);
+	font-weight: bold;
 	color: #F4CC70;
-	font-size: 2.7rem;
+	font-family: 'Dancing Script', cursive;
 }
 
-.nav .nav-item .nav-link .user-nav .user-status {
-	font-size: 1.3rem;
+#card-demo-example .card-body .card-text {
+	text-align: center;
+	font-size: calc(0.5rem + 3vw);
+	font-weight: bold;
+	color: #283046;
+
 }
 
-.main-menu .nav .navbar-brand .brand-logo img {
-	border-radius: 30%;
+#vision {
+	background-color: #283046;
+	text-align: center;
+	color: #7367f0;
 }
-
-.main-menu .nav .navbar-brand .brand-text {
+#vision .card-header {
+	padding: 0;
+	padding-top: 2%;
+}
+#vision .card-body {
+	padding: auto;
+	padding-top: 0;
+	padding-bottom: 2%;
+}
+#vision .card-title {
+	text-align: center;
+	color: #faf8f7;
+}
+#mision {
+	text-align: center;
+}
+#mision .card-header {
+	padding: 0;
+	padding-top: 2%;
+}
+#mision .card-body {
+	padding: auto;
+	padding-top: 0;
+	padding-bottom: 2%;
+}
+#mision .card-title {
+	text-align: center;
+	color: #283046;
+}
+#mision .card-body .card-text .alert{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #283046;
 	color: #F4CC70;
+}
+#mision .card-body .card-text .alert .alert-body .text-primary strong{
+	color: #faf8f7;
+}
 
+#video .video{
+	width: 100%;
+	min-width: 288px;
+	max-width: 90%;
+	max-height: 550px;
+	margin: 0 auto;
+	align-self: center;
+}
+
+.ecommerce-application .app-ecommerce-details .item-features {
+	background-color: #f8f8f8;
+    padding-top: 5.357rem;
+    padding-bottom: 5.357rem;
+}
+.ecommerce-application .app-ecommerce-details .item-features svg {
+	font-size: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #7367f0;
+}
+
+.ecommerce-application .app-ecommerce-details .card .card-body .product .product-information .nombre {
+	font-size: 2.9 rem;
+}
+
+#subtitulo {
+	margin-top: 30px;
+}
+#subtitulo .card-body .card-title {
+	position: absolute;
+	left: 30px;
+	bottom: 33%;
+	width: calc(100% - 60px);
+	padding: 6px;
+	text-align: center;
+	font-size: calc(1rem + 4vw);
+	font-weight: bold;
+	color: #F4CC70;
+	font-family: 'Dancing Script', cursive;
+}
+
+#subtitulo .card-body .card-text {
+	text-align: center;
+	font-size: calc(0.5rem + 3vw);
+	font-weight: bold;
+	color: #283046;
 }

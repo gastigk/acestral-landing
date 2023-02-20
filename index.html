@@ -41,6 +41,10 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <!-- END: Custom CSS-->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <!-- END: Head-->
 
@@ -61,13 +65,13 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav">
+                <!-- <ul class="nav navbar-nav">
                     <li class="nav-item d-none d-lg-block">
                         <a class="nav-link nav-link-style">
                             <i class="ficon" data-feather="sun"></i>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
             <ul class="nav navbar-nav align-items-center ms-auto">
                 <li class="nav-item dropdown dropdown-user">
@@ -83,25 +87,11 @@
                             <span class="avatar-status-busy"></span>
                         </span>
                     </a>
-
-                    <!-- dropdown menu 
-                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
-                        <a class="dropdown-item" href="#"> <i class="me-50" data-feather="user"></i> Profile </a>
-                        <a class="dropdown-item" href="#"> <i class="me-50" data-feather="mail"></i> Inbox </a>
-                        <a class="dropdown-item" href="#"> <i class="me-50" data-feather="check-square"></i> Task </a>
-                        <a class="dropdown-item" href="#"> <i class="me-50" data-feather="message-square"></i> Chats </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"> <i class="me-50" data-feather="settings"></i> Settings </a>
-                        <a class="dropdown-item" href="#"> <i class="me-50" data-feather="credit-card"></i> Pricing </a>
-                        <a class="dropdown-item" href="#"> <i class="me-50" data-feather="help-circle"></i> FAQ </a>
-                        <a class="dropdown-item" href="#"> <i class="me-50" data-feather="power"></i> Logout </a>
-                    </div> -->
                 </li>
             </ul>
         </div>
     </nav>
     <!-- END: Header-->
-
 
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
@@ -133,7 +123,7 @@
                         <span class="menu-title text-truncate" data-i18n="Home">Home</span>
                     </a>
                 </li>
-                <li class=" nav-item velas">
+                <li class=" nav-item">
                     <a class="d-flex align-items-center" href="#">
                         <i data-feather='loader'></i>
                         <span class="menu-title text-truncate" data-i18n="Page Layouts">Velas</span>
@@ -151,9 +141,15 @@
                                 <span class="menu-item text-truncate" data-i18n="Layout Full">Afrodita</span>
                             </a>
                         </li>
+                        <li>
+                            <a class="d-flex align-items-center" href="/">
+                                <i data-feather="circle"></i>
+                                <span class="menu-item text-truncate" data-i18n="Layout Full">Hermes</span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
-                <li class=" nav-item riruales">
+                <li class="nav-item">
                     <a class="d-flex align-items-center" href="#">
                         <i data-feather='star'></i>
                         <span class="menu-title text-truncate" data-i18n="Page Layouts">Rituales</span>
@@ -163,502 +159,476 @@
                         <li>
                             <a class="d-flex align-items-center" href="/">
                                 <i data-feather="circle"></i>
-                                <span class="menu-item text-truncate" data-i18n="Collapsed Menu">Ritual 1</span>
+                                <span class="menu-item text-truncate" data-i18n="Collapsed Menu">Limpieza
+                                    energética</span>
                             </a>
                         </li>
                         <li>
                             <a class="d-flex align-items-center" href="/">
                                 <i data-feather="circle"></i>
-                                <span class="menu-item text-truncate" data-i18n="Layout Full">Ritual 2</span>
+                                <span class="menu-item text-truncate" data-i18n="Layout Full">Sanación espirítual</span>
                             </a>
                         </li>
                     </ul>
+                </li>
+                <br>
+                <li class="nav-item">
+                    <a class="d-flex align-items-center" href="https://www.instagram.com/">
+                        <i data-feather='instagram'></i>
+                        <span class="menu-title text-truncate" data-i18n="instagram">Instagram</span>
+                    </a>
+                </li>
+                <li class=" nav-item riruales">
+                    <a class="d-flex align-items-center" href="https://www.tiktok.com/">
+                        <i data-feather='navigation'></i>
+                        <span class="menu-title text-truncate" data-i18n="navigation">TikTok</span>
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
     <!-- END: Main Menu-->
 
-    <!-- BEGIN: Content-->
+    <!-- BEGIN: App Content-->
     <div class="app-content content ">
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper container-xxl p-0">
             <div class="content-body">
-                <!-- Kick start -->
-                <div class="card">
+
+                <!-- BEGIN: Hero-->
+                <section id="card-demo-example">
+                    <div class="row match-height">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://res.cloudinary.com/drl62fylt/image/upload/v1670800807/velaIV_xpy5s3.jpg"
+                                    alt="Card image cap" />
+                                <div class="card-body">
+                                    <h1 class="card-title">Ancestral</h1>
+                                    <p class="card-text">
+                                        Sabiduría que ilumina
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END: Hero-->
+
+                <!-- BEGIN: Vision-->
+                <div id="vision">
                     <div class="card-header">
-                        <h1 class="card-title">Ancestral 🕯️</h1>
+                        <h3 class="card-title">¿Quiénes somos?</h3>
                     </div>
                     <div class="card-body">
                         <div class="card-text">
                             <p>
-                                Getting start with your project custom requirements using a ready template which is
+                                Getting start with your project custom requirements using a ready template which
+                                is
                                 quite difficult and time
                                 taking process, Vuexy Admin provides useful features to kick start your project
                                 development with no efforts !
                             </p>
-                            <ul>
-                                <li>
-                                    Vuexy Admin provides you getting start pages with different layouts, use the layout
-                                    as per your custom
-                                    requirements and just change the branding, menu &amp; content.
-                                </li>
-                                <li>
-                                    Every components in Vuexy Admin are decoupled, it means use use only components you
-                                    actually need! Remove
-                                    unnecessary and extra code easily just by excluding the path to specific SCSS, JS
-                                    file.
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
-                <!--/ Kick start -->
+                <!-- END: Vision-->
 
-                <div class="content-body">
-                    <!-- Knowledge base Jumbotron -->
-                    <section id="knowledge-base-search">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card knowledge-base-bg text-center"
-                                    style="background-image: url('./app-assets/images/banner/banner.png')">
-                                    <div class="card-body">
-                                        <h2 class="text-primary">Creamos un producto sin comparación</h2>
-                                        <p class="card-text mb-2">
-                                            <span>Diseñado para </span><span class="fw-bolder">iluminar</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!--/ Knowledge base Jumbotron -->
-
-                    <!-- Knowledge base -->
-                    <section id="knowledge-base-content">
-                        <div class="row kb-search-content-info match-height">
-                            <!-- cera de abeja -->
-                            <div class="col-md-4 col-sm-6 col-12 kb-search-content">
-                                <div class="card">
-                                    <a href="page-kb-category.html">
-                                        <img src="./app-assets/images/illustration/sales.svg" class="card-img-top"
-                                            alt="knowledge-base-image" />
-                                        <div class="card-body text-center">
-                                            <h4>100% cera de abeja</h4>
-                                            <p class="text-body mt-1 mb-0">
-                                                Este material produce iones negativos que neutralizan los contaminantes
-                                                en el aire, generando un ambiente purificado que repercute en tu estado
-                                                de ánimo.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- limpieza -->
-                            <div class="col-md-4 col-sm-6 col-12 kb-search-content">
-                                <div class="card">
-                                    <a href="page-kb-category.html">
-                                        <img src="./app-assets/images/illustration/marketing.svg"
-                                            class="card-img-top" alt="knowledge-base-image" />
-                                        <div class="card-body text-center">
-                                            <h4>Limpieza energética</h4>
-                                            <p class="text-body mt-1 mb-0">
-                                                Genera un ambiente purificado que repercute en el estado de ánimo de la
-                                                persona y limpia energéticamente el ambiente donde la prendés.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- intención -->
-                            <div class="col-md-4 col-sm-6 col-12 kb-search-content">
-                                <div class="card">
-                                    <a href="page-kb-category.html">
-                                        <img src="./app-assets/images/illustration/api.svg" class="card-img-top"
-                                            alt="knowledge-base-image" />
-                                        <div class="card-body text-center">
-                                            <h4>Intención</h4>
-                                            <p class="text-body mt-1 mb-0">
-                                                Nuestra intención es acompañar a quienes quieran trabajar con la energía
-                                                del Universo.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- elaboración -->
-                            <div class="col-md-4 col-sm-6 col-12 kb-search-content">
-                                <div class="card">
-                                    <a href="page-kb-category.html">
-                                        <img src="./app-assets/images/illustration/personalization.svg"
-                                            class="card-img-top" alt="knowledge-base-image" />
-                                        <div class="card-body text-center">
-                                            <h4>Elaboración</h4>
-                                            <p class="text-body mt-1 mb-0">
-                                                Todas nuestras velas son hechas de manera artesanal, con mucho amor y
-                                                cuidado, con materias primas de la mejor calidad.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Knowledge base ends -->
-
-                </div>
-            </div>
-        </div>
-        <!-- END: Content-->
-
-        <!-- Page layout -->
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">What is page layout?</h4>
-            </div>
-            <div class="card-body">
-                <div class="card-text">
-                    <p>
-                        Starter kit includes pages with different layouts, useful for your next project to start
-                        development process
-                        from scratch with no time.
-                    </p>
-                    <ul>
-                        <li>Each layout includes required only assets only.</li>
-                        <li>
-                            Select your choice of layout from starter kit, customize it with optional changes
-                            like colors and branding,
-                            add required dependency only.
-                        </li>
-                    </ul>
-                    <div class="alert alert-primary" role="alert">
-                        <div class="alert-body">
-                            <strong>Info:</strong> Please check the &nbsp;<a class="text-primary"
-                                href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/documentation/documentation-layouts.html#layout-collapsed-menu"
-                                target="_blank">Layout documentation</a>&nbsp; for more layout options i.e
-                            collapsed menu, without menu, empty & blank.
-                        </div>
+                <!-- BEGIN: Mision-->
+                <div id="mision">
+                    <div class="card-header">
+                        <h4 class="card-title">¿Qué brindamos?</h4>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!--/ Page layout -->
-
-        <!-- app e-commerce details start -->
-        <section class="app-ecommerce-details">
-            <div class="card">
-                <!-- Product Details starts -->
-                <div class="card-body">
-                    <div class="row my-2">
-                        <div class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <img src="./app-assets/images/pages/eCommerce/ritual.jpeg"
-                                    class="img-fluid product-img" alt="product image" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-7">
-                            <h4>Helios</h4>
-                            <span class="card-text item-company">By <a href="#"
-                                    class="company-name">Ancestral</a></span>
-                            <div class="ecommerce-details-price d-flex flex-wrap mt-1">
-                                <h4 class="item-price me-1">$2399.99</h4>
-                                <ul class="unstyled-list list-inline ps-1 border-start">
-                                    <li class="ratings-list-item"><i data-feather="star" class="filled-star"></i></li>
-                                    <li class="ratings-list-item"><i data-feather="star" class="filled-star"></i></li>
-                                    <li class="ratings-list-item"><i data-feather="star" class="filled-star"></i></li>
-                                    <li class="ratings-list-item"><i data-feather="star" class="filled-star"></i></li>
-                                    <li class="ratings-list-item"><i data-feather="star" class="unfilled-star"></i></li>
-                                </ul>
-                            </div>
-                            <p class="card-text">Available -
-                                <span class="text-success">In stock</span>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p>
+                                Starter kit includes pages with different layouts, useful for your next project
+                                to start
+                                development process
+                                from scratch with no time.
                             </p>
-                            <p class="card-text">
-                                Helios es una vela intencionada para limpiar tu energía, armoniza, limpia y purifica. Su
-                                llama ilumina y purifica como el Sol.
-                            </p>
-                            <ul class="product-features list-unstyled">
-                                <li><i data-feather="shopping-cart"></i> <span>Free Shipping</span></li>
-                            </ul>
-                            <hr />
-                            <div class="d-flex flex-column flex-sm-row pt-1">
-                                <a href="#" class="btn btn-primary btn-cart me-0 me-sm-1 mb-1 mb-sm-0">
-                                    <i data-feather="shopping-cart" class="me-50"></i>
-                                    <span class="add-to-cart">Pedir la mía</span>
-                                </a>
-                                <div class="btn-group dropdown-icon-wrapper btn-share">
-                                    <button type="button"
-                                        class="btn btn-icon hide-arrow btn-outline-secondary dropdown-toggle"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i data-feather="share-2"></i>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-end">
-                                        <a href="#" class="dropdown-item">
-                                            <i data-feather="facebook"></i>
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            <i data-feather="twitter"></i>
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            <i data-feather="youtube"></i>
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            <i data-feather="instagram"></i>
-                                        </a>
-                                    </div>
+                            <div class="alert" role="alert">
+                                <div class="alert-body">
+                                    <strong>Visitá nuestro:</strong>
+                                    <a class="text-primary" href="https://www.instagram.com/" target="_blank">
+                                        <strong>Instragram</strong>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Product Details ends -->
+                <!-- END: Mision-->
 
-                <!-- Item features starts -->
-                <div class="item-features">
-                    <div class="row text-center">
-                        <div class="col-12 col-md-4 mb-4 mb-md-0">
-                            <div class="w-75 mx-auto">
-                                <i data-feather="award"></i>
-                                <h4 class="mt-2 mb-1">100% Original</h4>
-                                <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant pie cookie
-                                    halvah.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 mb-4 mb-md-0">
-                            <div class="w-75 mx-auto">
-                                <i data-feather="clock"></i>
-                                <h4 class="mt-2 mb-1">10 Day Replacement</h4>
-                                <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes wafer cupcake.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 mb-4 mb-md-0">
-                            <div class="w-75 mx-auto">
-                                <i data-feather="shield"></i>
-                                <h4 class="mt-2 mb-1">1 Year Warranty</h4>
-                                <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love sweet
-                                    croissant.</p>
+                <!-- BEGIN: Video-->
+                <section id="video">
+                    <div class="row match-height">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <video class="video" src="./app-assets/images/pages/saumo.mp4" controls preload="auto"
+                                    alt="Card image cap"> </video>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Item features ends -->
-            </div>
-        </section>
-        <!-- app e-commerce details end -->
-
-        <!-- BEGIN: Content-->
-    <div class="app-content content ">
-        <div class="content-overlay"></div>
-        <div class="header-navbar-shadow"></div>
-        <div class="content-wrapper container-xxl p-0">
-            <div class="content-header row">
-            </div>
-            <div class="content-body">
-                <section id="pricing-plan">
-                    <!-- title text and switch button -->
-                    <div class="text-center">
-                        <h1 class="mt-5">Pricing Plans</h1>
-                        <p class="mb-2 pb-75">
-                            All plans include 40+ advanced tools and features to boost your product. Choose the best plan to fit your needs.
-                        </p>
-                        <div class="d-flex align-items-center justify-content-center mb-5 pb-50">
-                            <h6 class="me-1 mb-0">Monthly</h6>
-                            <div class="form-check form-switch">
-                                <input type="checkbox" class="form-check-input" id="priceSwitch" />
-                                <label class="form-check-label" for="priceSwitch"></label>
-                            </div>
-                            <h6 class="ms-50 mb-0">Annually</h6>
-                        </div>
-                    </div>
-                    <!--/ title text and switch button -->
-
-                    <!-- pricing plan cards -->
-                    <div class="row pricing-card">
-                        <div class="col-12 col-sm-offset-2 col-sm-10 col-md-12 col-lg-offset-2 col-lg-10 mx-auto">
-                            <div class="row">
-                                <!-- basic plan -->
-                                <div class="col-12 col-md-4">
-                                    <div class="card basic-pricing text-center">
-                                        <div class="card-body">
-                                            <img src="./app-assets/images/illustration/Pot1.svg" class="mb-2 mt-5" alt="svg img" />
-                                            <h3>Basic</h3>
-                                            <p class="card-text">A simple start for everyone</p>
-                                            <div class="annual-plan">
-                                                <div class="plan-price mt-2">
-                                                    <sup class="font-medium-1 fw-bold text-primary">$</sup>
-                                                    <span class="pricing-basic-value fw-bolder text-primary">0</span>
-                                                    <sub class="pricing-duration text-body font-medium-1 fw-bold">/month</sub>
-                                                </div>
-                                                <small class="annual-pricing d-none text-muted"></small>
-                                            </div>
-                                            <ul class="list-group list-group-circle text-start">
-                                                <li class="list-group-item">100 responses a month</li>
-                                                <li class="list-group-item">Unlimited forms and surveys</li>
-                                                <li class="list-group-item">Unlimited fields</li>
-                                                <li class="list-group-item">Basic form creation tools</li>
-                                                <li class="list-group-item">Up to 2 subdomains</li>
-                                            </ul>
-                                            <button class="btn w-100 btn-outline-success mt-2">Your current plan</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/ basic plan -->
-
-                                <!-- standard plan -->
-                                <div class="col-12 col-md-4">
-                                    <div class="card standard-pricing popular text-center">
-                                        <div class="card-body">
-                                            <div class="pricing-badge text-end">
-                                                <span class="badge rounded-pill badge-light-primary">Popular</span>
-                                            </div>
-                                            <img src="./app-assets/images/illustration/Pot2.svg" class="mb-1" alt="svg img" />
-                                            <h3>Standard</h3>
-                                            <p class="card-text">For small to medium businesses</p>
-                                            <div class="annual-plan">
-                                                <div class="plan-price mt-2">
-                                                    <sup class="font-medium-1 fw-bold text-primary">$</sup>
-                                                    <span class="pricing-standard-value fw-bolder text-primary">49</span>
-                                                    <sub class="pricing-duration text-body font-medium-1 fw-bold">/month</sub>
-                                                </div>
-                                                <small class="annual-pricing d-none text-muted"></small>
-                                            </div>
-                                            <ul class="list-group list-group-circle text-start">
-                                                <li class="list-group-item">Unlimited responses</li>
-                                                <li class="list-group-item">Unlimited forms and surveys</li>
-                                                <li class="list-group-item">Instagram profile page</li>
-                                                <li class="list-group-item">Google Docs integration</li>
-                                                <li class="list-group-item">Custom “Thank you” page</li>
-                                            </ul>
-                                            <button class="btn w-100 btn-primary mt-2">Upgrade</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/ standard plan -->
-
-                                <!-- enterprise plan -->
-                                <div class="col-12 col-md-4">
-                                    <div class="card enterprise-pricing text-center">
-                                        <div class="card-body">
-                                            <img src="./app-assets/images/illustration/Pot3.svg" class="mb-2" alt="svg img" />
-                                            <h3>Enterprise</h3>
-                                            <p class="card-text">Solution for big organizations</p>
-                                            <div class="annual-plan">
-                                                <div class="plan-price mt-2">
-                                                    <sup class="font-medium-1 fw-bold text-primary">$</sup>
-                                                    <span class="pricing-enterprise-value fw-bolder text-primary">99</span>
-                                                    <sub class="pricing-duration text-body font-medium-1 fw-bold">/month</sub>
-                                                </div>
-                                                <small class="annual-pricing d-none text-muted"></small>
-                                            </div>
-                                            <ul class="list-group list-group-circle text-start">
-                                                <li class="list-group-item">PayPal payments</li>
-                                                <li class="list-group-item">Logic Jumps</li>
-                                                <li class="list-group-item">File upload with 5GB storage</li>
-                                                <li class="list-group-item">Custom domain support</li>
-                                                <li class="list-group-item">Stripe integration</li>
-                                            </ul>
-                                            <button class="btn w-100 btn-outline-primary mt-2">Upgrade</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/ enterprise plan -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--/ pricing plan cards -->
-
-                    <!-- pricing free trial -->
-                    <div class="pricing-free-trial">
-                        <div class="row">
-                            <div class="col-12 col-lg-10 col-lg-offset-3 mx-auto">
-                                <div class="pricing-trial-content d-flex justify-content-between">
-                                    <div class="text-center text-md-start mt-3">
-                                        <h3 class="text-primary">Still not convinced? Start with a 14-day FREE trial!</h3>
-                                        <h5>You will get full access to with all the features for 14 days.</h5>
-                                        <button class="btn btn-primary mt-2 mt-lg-3">Start 14-day FREE trial</button>
-                                    </div>
-
-                                    <!-- image -->
-                                    <img src=".app-assets/images/illustration/pricing-Illustration.svg" class="pricing-trial-img img-fluid" alt="svg img" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/ pricing free trial -->
-
-                    <!-- pricing faq -->
-                    <div class="pricing-faq">
-                        <h3 class="text-center">FAQ's</h3>
-                        <p class="text-center">Let us help answer the most common questions.</p>
-                        <div class="row my-2">
-                            <div class="col-12 col-lg-10 col-lg-offset-2 mx-auto">
-                                <!-- faq collapse -->
-                                <div class="accordion accordion-margin" id="accordionExample">
-                                    <div class="card accordion-item">
-                                        <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                Does my subscription automatically renew?
-                                            </button>
-                                        </h2>
-
-                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Pastry pudding cookie toffee bonbon jujubes jujubes powder topping. Jelly beans gummi bears sweet roll
-                                                bonbon muffin liquorice. Wafer lollipop sesame snaps. Brownie macaroon cookie muffin cupcake candy
-                                                caramels tiramisu. Oat cake chocolate cake sweet jelly-o brownie biscuit marzipan. Jujubes donut
-                                                marzipan chocolate bar. Jujubes sugar plum jelly beans tiramisu icing cheesecake.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card accordion-item">
-                                        <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Can I store the item on an intranet so everyone has access?
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Tiramisu marshmallow dessert halvah bonbon cake gingerbread. Jelly beans chocolate pie powder. Dessert
-                                                pudding chocolate cake bonbon bear claw cotton candy cheesecake. Biscuit fruitcake macaroon carrot cake.
-                                                Chocolate cake bear claw muffin chupa chups pudding.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card accordion-item">
-                                        <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Am I allowed to modify the item that I purchased?
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Tart gummies dragée lollipop fruitcake pastry oat cake. Cookie jelly jelly macaroon icing jelly beans
-                                                soufflé cake sweet. Macaroon sesame snaps cheesecake tart cake sugar plum. Dessert jelly-o sweet muffin
-                                                chocolate candy pie tootsie roll marzipan. Carrot cake marshmallow pastry. Bonbon biscuit pastry topping
-                                                toffee dessert gummies. Topping apple pie pie croissant cotton candy dessert tiramisu.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/ pricing faq -->
                 </section>
+                <!-- END: Video-->
 
+                <!-- BEGIN: Subtitulo-->
+                <section id="subtitulo">
+                    <div class="row match-height">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Nuestros productos</h6>
+                                    <h3 class="card-text">Herramientas de luz</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END: Subtitulo-->
+
+                <!-- BEGIN: Product Details-->
+                <div class="ecommerce-application">
+                    <!-- app e-commerce details start -->
+                    <section class="app-ecommerce-details">
+                        <div class="card">
+                            <!-- Helios Details starts -->
+                            <div class="card-body">
+                                <div class="product row my-2">
+                                    <div
+                                        class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://res.cloudinary.com/drl62fylt/image/upload/v1670800812/velaV_nlrvp3.jpg"
+                                                class="img-fluid product-img" alt="product image" />
+                                        </div>
+                                    </div>
+                                    <div class="product-information col-12 col-md-7">
+                                        <h3 class="nombre">Helios</h3>
+                                        <span class="card-text item-company">By <a href="#"
+                                                class="company-name">Ancestral</a></span>
+                                        <div class="ecommerce-details-price d-flex flex-wrap mt-1">
+                                            <h4 class="item-price me-1">$2399.99</h4>
+                                            <ul class="unstyled-list list-inline ps-1 border-start">
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="unfilled-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <p class="card-text">
+                                            <span class="text-success">en stock</span>
+                                        </p>
+                                        <p class="card-text">
+                                            GPS, Always-On Retina display, 30% larger screen, Swimproof, ECG app,
+                                            Electrical and optical heart sensors,
+                                            Built-in compass, Elevation, Emergency SOS, Fall Detection, S5 SiP with up
+                                            to 2x faster 64-bit dual-core
+                                            processor, watchOS 6 with Activity trends, cycle tracking, hearing health
+                                            innovations, and the App Store on
+                                            your wrist
+                                        </p>
+                                        <ul class="product-features list-unstyled">
+                                            <li><i data-feather="shopping-cart"></i> <span>envios a todo el país</span>
+                                            </li>
+                                            <li>
+                                                <i data-feather="dollar-sign"></i>
+                                                <span>descruentos por compras mayorista</span>
+                                            </li>
+                                        </ul>
+                                        <hr />
+                                        <div class="d-flex flex-column flex-sm-row pt-1">
+                                            <a href="#" class="btn btn-primary btn-cart me-0 me-sm-1 mb-1 mb-sm-0">
+                                                <i data-feather="shopping-cart" class="me-50"></i>
+                                                <span class="add-to-cart">Quiero la mía</span>
+                                            </a>
+                                            <div class="btn-group dropdown-icon-wrapper btn-share">
+                                                <button type="button"
+                                                    class="btn btn-icon hide-arrow btn-outline-secondary dropdown-toggle"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i data-feather="share-2"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="#" class="dropdown-item">
+                                                        <i data-feather="instagram"></i>
+                                                    </a>
+                                                    <a href="#" class="dropdown-item">
+                                                        <i data-feather="youtube"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Helios Details ends -->
+
+                            <!-- Helios features starts -->
+                            <div class="item-features">
+                                <div class="row text-center">
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div class="w-75 mx-auto">
+                                            <i data-feather="award"></i>
+                                            <h4 class="mt-2 mb-1">100% Original</h4>
+                                            <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
+                                                pie cookie halvah.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div class="w-75 mx-auto">
+                                            <i data-feather="clock"></i>
+                                            <h4 class="mt-2 mb-1">10 Day Replacement</h4>
+                                            <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
+                                                wafer cupcake.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div class="w-75 mx-auto">
+                                            <i data-feather="shield"></i>
+                                            <h4 class="mt-2 mb-1">1 Year Warranty</h4>
+                                            <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
+                                                sweet croissant.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Helios features ends -->
+
+                            <!-- Helios Details starts -->
+                            <div class="card-body">
+                                <div class="product row my-2">
+                                    <div
+                                        class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://res.cloudinary.com/drl62fylt/image/upload/v1670800665/velaI_liy7b7_56b40e.jpg"
+                                                class="img-fluid product-img" alt="product image" />
+                                        </div>
+                                    </div>
+                                    <div class="product-information col-12 col-md-7">
+                                        <h3 class="nombre">Afrodita</h3>
+                                        <span class="card-text item-company">By <a href="#"
+                                                class="company-name">Ancestral</a></span>
+                                        <div class="ecommerce-details-price d-flex flex-wrap mt-1">
+                                            <h4 class="item-price me-1">$2999.99</h4>
+                                            <ul class="unstyled-list list-inline ps-1 border-start">
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="unfilled-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <p class="card-text">
+                                            <span class="text-success">en stock</span>
+                                        </p>
+                                        <p class="card-text">
+                                            GPS, Always-On Retina display, 30% larger screen, Swimproof, ECG app,
+                                            Electrical and optical heart sensors,
+                                            Built-in compass, Elevation, Emergency SOS, Fall Detection, S5 SiP with up
+                                            to 2x faster 64-bit dual-core
+                                            processor, watchOS 6 with Activity trends, cycle tracking, hearing health
+                                            innovations, and the App Store on
+                                            your wrist
+                                        </p>
+                                        <ul class="product-features list-unstyled">
+                                            <li><i data-feather="shopping-cart"></i> <span>envios a todo el país</span>
+                                            </li>
+                                            <li>
+                                                <i data-feather="dollar-sign"></i>
+                                                <span>descruentos por compras mayorista</span>
+                                            </li>
+                                        </ul>
+                                        <hr />
+                                        <div class="d-flex flex-column flex-sm-row pt-1">
+                                            <a href="#" class="btn btn-primary btn-cart me-0 me-sm-1 mb-1 mb-sm-0">
+                                                <i data-feather="shopping-cart" class="me-50"></i>
+                                                <span class="add-to-cart">Quiero la mía</span>
+                                            </a>
+                                            <div class="btn-group dropdown-icon-wrapper btn-share">
+                                                <button type="button"
+                                                    class="btn btn-icon hide-arrow btn-outline-secondary dropdown-toggle"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i data-feather="share-2"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="#" class="dropdown-item">
+                                                        <i data-feather="instagram"></i>
+                                                    </a>
+                                                    <a href="#" class="dropdown-item">
+                                                        <i data-feather="youtube"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Helios Details ends -->
+
+                            <!-- Helios features starts -->
+                            <div class="item-features">
+                                <div class="row text-center">
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div class="w-75 mx-auto">
+                                            <i data-feather="award"></i>
+                                            <h4 class="mt-2 mb-1">100% Original</h4>
+                                            <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
+                                                pie cookie halvah.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div class="w-75 mx-auto">
+                                            <i data-feather="clock"></i>
+                                            <h4 class="mt-2 mb-1">10 Day Replacement</h4>
+                                            <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
+                                                wafer cupcake.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div class="w-75 mx-auto">
+                                            <i data-feather="shield"></i>
+                                            <h4 class="mt-2 mb-1">1 Year Warranty</h4>
+                                            <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
+                                                sweet croissant.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Helios features ends -->
+
+                            <!-- Helios Details starts -->
+                            <div class="card-body">
+                                <div class="product row my-2">
+                                    <div
+                                        class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://res.cloudinary.com/drl62fylt/image/upload/v1670800796/velaII_faahd1.jpg"
+                                                class="img-fluid product-img" alt="product image" />
+                                        </div>
+                                    </div>
+                                    <div class="product-information col-12 col-md-7">
+                                        <h3 class="nombre">Hermes</h3>
+                                        <span class="card-text item-company">By <a href="#"
+                                                class="company-name">Ancestral</a></span>
+                                        <div class="ecommerce-details-price d-flex flex-wrap mt-1">
+                                            <h4 class="item-price me-1">$2699.99</h4>
+                                            <ul class="unstyled-list list-inline ps-1 border-start">
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="filled-star"></i></li>
+                                                <li class="ratings-list-item"><i data-feather="star"
+                                                        class="unfilled-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <p class="card-text">
+                                            <span class="text-success">en stock</span>
+                                        </p>
+                                        <p class="card-text">
+                                            GPS, Always-On Retina display, 30% larger screen, Swimproof, ECG app,
+                                            Electrical and optical heart sensors,
+                                            Built-in compass, Elevation, Emergency SOS, Fall Detection, S5 SiP with up
+                                            to 2x faster 64-bit dual-core
+                                            processor, watchOS 6 with Activity trends, cycle tracking, hearing health
+                                            innovations, and the App Store on
+                                            your wrist
+                                        </p>
+                                        <ul class="product-features list-unstyled">
+                                            <li><i data-feather="shopping-cart"></i> <span>envios a todo el país</span>
+                                            </li>
+                                            <li>
+                                                <i data-feather="dollar-sign"></i>
+                                                <span>descruentos por compras mayorista</span>
+                                            </li>
+                                        </ul>
+                                        <hr />
+                                        <div class="d-flex flex-column flex-sm-row pt-1">
+                                            <a href="#" class="btn btn-primary btn-cart me-0 me-sm-1 mb-1 mb-sm-0">
+                                                <i data-feather="shopping-cart" class="me-50"></i>
+                                                <span class="add-to-cart">Quiero la mía</span>
+                                            </a>
+                                            <div class="btn-group dropdown-icon-wrapper btn-share">
+                                                <button type="button"
+                                                    class="btn btn-icon hide-arrow btn-outline-secondary dropdown-toggle"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i data-feather="share-2"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="#" class="dropdown-item">
+                                                        <i data-feather="instagram"></i>
+                                                    </a>
+                                                    <a href="#" class="dropdown-item">
+                                                        <i data-feather="youtube"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Helios Details ends -->
+
+                            <!-- Helios features starts -->
+                            <div class="item-features">
+                                <div class="row text-center">
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div class="w-75 mx-auto">
+                                            <i data-feather="award"></i>
+                                            <h4 class="mt-2 mb-1">100% Original</h4>
+                                            <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
+                                                pie cookie halvah.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div class="w-75 mx-auto">
+                                            <i data-feather="clock"></i>
+                                            <h4 class="mt-2 mb-1">10 Day Replacement</h4>
+                                            <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
+                                                wafer cupcake.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div class="w-75 mx-auto">
+                                            <i data-feather="shield"></i>
+                                            <h4 class="mt-2 mb-1">1 Year Warranty</h4>
+                                            <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
+                                                sweet croissant.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Helios features ends -->
+                        </div>
+                    </section>
+                    <!-- app e-commerce details end -->
+                </div>
             </div>
+            <!-- END: Content-->
+
+
         </div>
     </div>
-    <!-- END: Content-->
-
-
     </div>
-    <!-- END: Content-->
+    <!-- END: App Content-->
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
