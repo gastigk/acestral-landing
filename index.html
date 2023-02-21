@@ -22,6 +22,7 @@
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/extensions/plyr.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -30,11 +31,15 @@
     <link rel="stylesheet" type="text/css" href="./app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/components.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/bordered-layout.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.css">
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/extensions/ext-component-media-player.css">
+
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -238,7 +243,7 @@
                 <!-- BEGIN: Mision-->
                 <div id="mision">
                     <div class="card-header">
-                        <h4 class="card-title">¿Qué brindamos?</h4>
+                        <h3 class="card-title">¿Qué brindamos?</h3>
                     </div>
                     <div class="card-body">
                         <div class="card-text">
@@ -261,18 +266,302 @@
                 </div>
                 <!-- END: Mision-->
 
-                <!-- BEGIN: Video-->
-                <section id="video">
-                    <div class="row match-height">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="card">
-                                <video class="video" src="./app-assets/images/pages/saumo.mp4" controls preload="auto"
-                                    alt="Card image cap"> </video>
+                <!-- BEGIN: Content-->
+                <div class="content-body">
+                    <!-- Media Player -->
+                    <section id="media-player-wrapper">
+                        <div class="row">
+                            <!-- VIDEO -->
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Video</h4>
+                                        <div class="plyr plyr--full-ui plyr--video plyr--youtube plyr--fullscreen-enabled plyr--paused plyr--stopped plyr--is-touch plyr__poster-enabled"
+                                            id="plyr-video-player">
+                                            <div class="plyr__controls">
+                                                <button
+                                                    class="plyr__controls__item plyr__control" type="button"
+                                                    data-plyr="play"
+                                                    aria-label="Play, View From A Blue Moon - Official Trailer (4K Ultra HD) - John Florence">
+                                                    <svg
+                                                        class="icon--pressed" aria-hidden="true" focusable="false">
+                                                        <use xlink:href="#plyr-pause"></use>
+                                                    </svg>
+                                                    <svg class="icon--not-pressed" aria-hidden="true"
+                                                        focusable="false">
+                                                        <use xlink:href="#plyr-play"></use>
+                                                    </svg>
+                                                    <span class="label--pressed plyr__tooltip">Pause
+                                                    </span>
+                                                    <span
+                                                        class="label--not-pressed plyr__tooltip">Play
+                                                    </span>
+                                                </button>
+
+                                                <div class="plyr__controls__item plyr__progress__container">
+                                                    <div class="plyr__progress">
+                                                        <input data-plyr="seek" type="range"
+                                                            min="0" max="100" step="0.01" value="0" autocomplete="off"
+                                                            role="slider" aria-label="Seek" aria-valuemin="0"
+                                                            aria-valuemax="100" aria-valuenow="0" id="plyr-seek-8318"
+                                                            aria-valuetext="00:00 of 03:04"
+                                                            style="--value:0%; user-select: none; touch-action: manipulation;">
+                                                            <progress
+                                                            class="plyr__progress__buffer" min="0" max="100" value="0"
+                                                            role="progressbar" aria-hidden="true">%
+                                                            buffered</progress>
+                                                            <span class="plyr__tooltip">00:00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="plyr__controls__item plyr__time--current plyr__time"
+                                                    aria-label="Current time">
+                                                    -03:04
+                                                </div>
+                                                <div class="plyr__controls__item plyr__volume">
+                                                    <button type="button"
+                                                        class="plyr__control" data-plyr="mute">
+                                                        <svg
+                                                            class="icon--pressed" aria-hidden="true" focusable="false">
+                                                            <use xlink:href="#plyr-muted"></use>
+                                                        </svg>
+                                                        <svg class="icon--not-pressed" aria-hidden="true"
+                                                            focusable="false">
+                                                            <use xlink:href="#plyr-volume"></use>
+                                                        </svg>
+                                                        <span
+                                                            class="label--pressed plyr__tooltip">Unmute
+                                                        </span>
+                                                        <span
+                                                            class="label--not-pressed plyr__tooltip">Mute
+                                                        </span>
+                                                    </button>
+                                                    <input
+                                                        data-plyr="volume" type="range" min="0" max="1" step="0.05"
+                                                        value="1" autocomplete="off" role="slider" aria-label="Volume"
+                                                        aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"
+                                                        id="plyr-volume-8318" aria-valuetext="100.0%"
+                                                        style="--value:100%; user-select: none; touch-action: manipulation;">
+                                                </div>
+                                                <button class="plyr__controls__item plyr__control" type="button"
+                                                    data-plyr="captions">
+                                                    <svg class="icon--pressed" aria-hidden="true"
+                                                        focusable="false">
+                                                        <use xlink:href="#plyr-captions-on"></use>
+                                                    </svg>
+                                                    <svg class="icon--not-pressed" aria-hidden="true"
+                                                        focusable="false">
+                                                        <use xlink:href="#plyr-captions-off"></use>
+                                                    </svg>
+                                                    <span class="label--pressed plyr__tooltip">Disable
+                                                        captions
+                                                    </span>
+                                                    <span
+                                                        class="label--not-pressed plyr__tooltip">Enable
+                                                        captions
+                                                    </span>
+                                                </button>
+                                                <div class="plyr__controls__item plyr__menu">
+                                                    <button
+                                                        aria-haspopup="true" aria-controls="plyr-settings-8318"
+                                                        aria-expanded="false" type="button" class="plyr__control"
+                                                        data-plyr="settings">
+                                                        <svg aria-hidden="true" focusable="false">
+                                                            <use xlink:href="#plyr-settings"></use>
+                                                        </svg>
+                                                        <span class="plyr__tooltip">Settings</span>
+                                                    </button>
+                                                    <div class="plyr__menu__container" id="plyr-settings-8318"
+                                                        hidden="">
+                                                        <div>
+                                                            <div id="plyr-settings-8318-home">
+                                                                <div role="menu">
+                                                                    <button data-plyr="settings"
+                                                                        type="button"
+                                                                        class="plyr__control plyr__control--forward"
+                                                                        role="menuitem" aria-haspopup="true"
+                                                                        hidden="">
+                                                                        <span>Captions
+                                                                            <span
+                                                                                class="plyr__menu__value">Disabled
+                                                                            </span>
+                                                                        </span>
+                                                                    </button>
+                                                                    <button
+                                                                        data-plyr="settings" type="button"
+                                                                        class="plyr__control plyr__control--forward"
+                                                                        role="menuitem" aria-haspopup="true"
+                                                                        hidden="">
+                                                                        <span>Quality
+                                                                            <span
+                                                                                class="plyr__menu__value">undefined
+                                                                            </span>
+                                                                        </span>
+                                                                    </button>
+                                                                    <button
+                                                                        data-plyr="settings" type="button"
+                                                                        class="plyr__control plyr__control--forward"
+                                                                        role="menuitem"
+                                                                        aria-haspopup="true">
+                                                                        <span>Speed
+                                                                            <span
+                                                                                class="plyr__menu__value">Normal
+                                                                            </span>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div id="plyr-settings-8318-captions" hidden="">
+                                                                <button
+                                                                    type="button"
+                                                                    class="plyr__control plyr__control--back">
+                                                                    <span
+                                                                        aria-hidden="true">Captions
+                                                                    </span>
+                                                                    <span
+                                                                        class="plyr__sr-only">Go back to
+                                                                        previous menu
+                                                                    </span>
+                                                                </button>
+                                                                <div role="menu"></div>
+                                                            </div>
+                                                            <div id="plyr-settings-8318-quality" hidden="">
+                                                                <button
+                                                                    type="button"
+                                                                    class="plyr__control plyr__control--back">
+                                                                    <span
+                                                                        aria-hidden="true">Quality
+                                                                    </span>
+                                                                    <span
+                                                                        class="plyr__sr-only">Go back to
+                                                                        previous menu
+                                                                    </span>
+                                                                </button>
+                                                                <div role="menu"></div>
+                                                            </div>
+                                                            <div id="plyr-settings-8318-speed" hidden="">
+                                                                <button
+                                                                    type="button"
+                                                                    class="plyr__control plyr__control--back">
+                                                                    <span
+                                                                        aria-hidden="true">Speed
+                                                                    </span>
+                                                                    <span
+                                                                        class="plyr__sr-only">Go back to
+                                                                        previous menu
+                                                                    </span>
+                                                                </button>
+                                                                <div role="menu">
+                                                                    <button data-plyr="speed" type="button"
+                                                                        role="menuitemradio" class="plyr__control"
+                                                                        aria-checked="false"
+                                                                        value="0.5">
+                                                                        <span>0.5×</span>
+                                                                    </button>
+                                                                    <button
+                                                                        data-plyr="speed" type="button"
+                                                                        role="menuitemradio" class="plyr__control"
+                                                                        aria-checked="false"
+                                                                        value="0.75">
+                                                                        <span>0.75×</span>
+                                                                    </button>
+                                                                    <button
+                                                                        data-plyr="speed" type="button"
+                                                                        role="menuitemradio" class="plyr__control"
+                                                                        aria-checked="true"
+                                                                        value="1">
+                                                                        <span>Normal</span>
+                                                                    </button>
+                                                                    <button
+                                                                        data-plyr="speed" type="button"
+                                                                        role="menuitemradio" class="plyr__control"
+                                                                        aria-checked="false"
+                                                                        value="1.25">
+                                                                        <span>1.25×</span>
+                                                                    </button>
+                                                                    <button
+                                                                        data-plyr="speed" type="button"
+                                                                        role="menuitemradio" class="plyr__control"
+                                                                        aria-checked="false"
+                                                                        value="1.5">
+                                                                        <span>1.5×</span>
+                                                                    </button>
+                                                                    <button
+                                                                        data-plyr="speed" type="button"
+                                                                        role="menuitemradio" class="plyr__control"
+                                                                        aria-checked="false"
+                                                                        value="1.75">
+                                                                        <span>1.75×</span>
+                                                                    </button>
+                                                                    <button
+                                                                        data-plyr="speed" type="button"
+                                                                        role="menuitemradio" class="plyr__control"
+                                                                        aria-checked="false"
+                                                                        value="2">
+                                                                        <span>2×</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="plyr__controls__item plyr__control" type="button"
+                                                    data-plyr="pip">
+                                                    <svg aria-hidden="true" focusable="false">
+                                                        <use xlink:href="#plyr-pip"></use>
+                                                    </svg>
+                                                    <span class="plyr__tooltip">PIP</span>
+                                                </button>
+                                                <button
+                                                    class="plyr__controls__item plyr__control" type="button"
+                                                    data-plyr="fullscreen">
+                                                    <svg class="icon--pressed" aria-hidden="true"
+                                                        focusable="false">
+                                                        <use xlink:href="#plyr-exit-fullscreen"></use>
+                                                    </svg>
+                                                    <svg class="icon--not-pressed" aria-hidden="true"
+                                                        focusable="false">
+                                                        <use xlink:href="#plyr-enter-fullscreen"></use>
+                                                    </svg>
+                                                    <span class="label--pressed plyr__tooltip">Exit
+                                                        fullscreen</span>
+                                                        <span
+                                                        class="label--not-pressed plyr__tooltip">Enter
+                                                        fullscreen</span>
+                                                </button>
+                                            </div>
+                                            <div class="plyr__video-wrapper plyr__video-embed"
+                                                style="aspect-ratio: 16 / 9;">
+                                                <iframe id="youtube-5717" frameborder="0"
+                                                    allowfullscreen="1"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    title="Player for View From A Blue Moon - Official Trailer (4K Ultra HD) - John Florence"
+                                                    width="640" height="360"
+                                                    src="https://www.youtube.com/embed/bTqVqk7FSmY">
+                                                </iframe>
+                                                <div class="plyr__poster"
+                                                    style="background-image: url(&quot;https://i.ytimg.com/vi/bTqVqk7FSmY/maxresdefault.jpg&quot;);">
+                                                </div>
+                                            </div>
+                                            <button type="button" class="plyr__control plyr__control--overlaid"
+                                                data-plyr="play"
+                                                aria-label="Play, View From A Blue Moon - Official Trailer (4K Ultra HD) - John Florence"><svg
+                                                    aria-hidden="true" focusable="false">
+                                                    <use xlink:href="#plyr-play"></use>
+                                                </svg><span class="plyr__sr-only">Play</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!--/ VIDEO -->
                         </div>
-                    </div>
-                </section>
-                <!-- END: Video-->
+                    </section>
+                    <!--/ Media Player -->
+
+                </div>
+                <!-- END: Content-->
+
+
 
                 <!-- BEGIN: Subtitulo-->
                 <section id="subtitulo">
@@ -280,7 +569,7 @@
                         <div class="col-md-12 col-lg-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h6 class="card-title">Nuestros productos</h6>
+                                    <h4 class="card-title">Nuestras velas</h4>
                                     <h3 class="card-text">Herramientas de luz</h3>
                                 </div>
                             </div>
@@ -293,8 +582,8 @@
                 <div class="ecommerce-application">
                     <!-- app e-commerce details start -->
                     <section class="app-ecommerce-details">
+                        <!-- Helios Details starts -->
                         <div class="card">
-                            <!-- Helios Details starts -->
                             <div class="card-body">
                                 <div class="product row my-2">
                                     <div
@@ -369,40 +658,42 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Helios Details ends -->
+                        </div>
+                        <!-- Helios Details ends -->
 
-                            <!-- Helios features starts -->
-                            <div class="item-features">
-                                <div class="row text-center">
-                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                        <div class="w-75 mx-auto">
-                                            <i data-feather="award"></i>
-                                            <h4 class="mt-2 mb-1">100% Original</h4>
-                                            <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
-                                                pie cookie halvah.</p>
-                                        </div>
+                        <!-- Helios features starts -->
+                        <div class="item-features">
+                            <div class="row text-center">
+                                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div class="w-75 mx-auto">
+                                        <i data-feather="award"></i>
+                                        <h4 class="mt-2 mb-1">100% Original</h4>
+                                        <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
+                                            pie cookie halvah.</p>
                                     </div>
-                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                        <div class="w-75 mx-auto">
-                                            <i data-feather="clock"></i>
-                                            <h4 class="mt-2 mb-1">10 Day Replacement</h4>
-                                            <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
-                                                wafer cupcake.</p>
-                                        </div>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div class="w-75 mx-auto">
+                                        <i data-feather="clock"></i>
+                                        <h4 class="mt-2 mb-1">10 Day Replacement</h4>
+                                        <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
+                                            wafer cupcake.</p>
                                     </div>
-                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                        <div class="w-75 mx-auto">
-                                            <i data-feather="shield"></i>
-                                            <h4 class="mt-2 mb-1">1 Year Warranty</h4>
-                                            <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
-                                                sweet croissant.</p>
-                                        </div>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div class="w-75 mx-auto">
+                                        <i data-feather="shield"></i>
+                                        <h4 class="mt-2 mb-1">1 Year Warranty</h4>
+                                        <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
+                                            sweet croissant.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Helios features ends -->
+                        </div>
+                        <!-- Helios features ends -->
 
-                            <!-- Helios Details starts -->
+                        <!-- Afrodita Details starts -->
+                        <div class="card">
                             <div class="card-body">
                                 <div class="product row my-2">
                                     <div
@@ -477,46 +768,48 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Helios Details ends -->
+                        </div>
+                        <!-- Afrodita Details ends -->
 
-                            <!-- Helios features starts -->
-                            <div class="item-features">
-                                <div class="row text-center">
-                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                        <div class="w-75 mx-auto">
-                                            <i data-feather="award"></i>
-                                            <h4 class="mt-2 mb-1">100% Original</h4>
-                                            <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
-                                                pie cookie halvah.</p>
-                                        </div>
+                        <!-- Afrodita features starts -->
+                        <div class="item-features">
+                            <div class="row text-center">
+                                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div class="w-75 mx-auto">
+                                        <i data-feather="award"></i>
+                                        <h4 class="mt-2 mb-1">100% Original</h4>
+                                        <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
+                                            pie cookie halvah.</p>
                                     </div>
-                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                        <div class="w-75 mx-auto">
-                                            <i data-feather="clock"></i>
-                                            <h4 class="mt-2 mb-1">10 Day Replacement</h4>
-                                            <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
-                                                wafer cupcake.</p>
-                                        </div>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div class="w-75 mx-auto">
+                                        <i data-feather="clock"></i>
+                                        <h4 class="mt-2 mb-1">10 Day Replacement</h4>
+                                        <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
+                                            wafer cupcake.</p>
                                     </div>
-                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                        <div class="w-75 mx-auto">
-                                            <i data-feather="shield"></i>
-                                            <h4 class="mt-2 mb-1">1 Year Warranty</h4>
-                                            <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
-                                                sweet croissant.</p>
-                                        </div>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div class="w-75 mx-auto">
+                                        <i data-feather="shield"></i>
+                                        <h4 class="mt-2 mb-1">1 Year Warranty</h4>
+                                        <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
+                                            sweet croissant.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Helios features ends -->
+                        </div>
+                        <!-- Afrodita features ends -->
 
-                            <!-- Helios Details starts -->
+                        <!-- Hermes Details starts -->
+                        <div class="card">
                             <div class="card-body">
                                 <div class="product row my-2">
                                     <div
                                         class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <img src="https://res.cloudinary.com/drl62fylt/image/upload/v1670800796/velaII_faahd1.jpg"
+                                            <img src="https://res.cloudinary.com/drl62fylt/image/upload/v1670800665/velaI_liy7b7_56b40e.jpg"
                                                 class="img-fluid product-img" alt="product image" />
                                         </div>
                                     </div>
@@ -585,48 +878,435 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Helios Details ends -->
+                        </div>
+                        <!-- Hermes Details ends -->
 
-                            <!-- Helios features starts -->
-                            <div class="item-features">
-                                <div class="row text-center">
-                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                        <div class="w-75 mx-auto">
-                                            <i data-feather="award"></i>
-                                            <h4 class="mt-2 mb-1">100% Original</h4>
-                                            <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
-                                                pie cookie halvah.</p>
-                                        </div>
+                        <!-- Hermes features starts -->
+                        <div class="item-features">
+                            <div class="row text-center">
+                                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div class="w-75 mx-auto">
+                                        <i data-feather="award"></i>
+                                        <h4 class="mt-2 mb-1">100% Original</h4>
+                                        <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
+                                            pie cookie halvah.</p>
                                     </div>
-                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                        <div class="w-75 mx-auto">
-                                            <i data-feather="clock"></i>
-                                            <h4 class="mt-2 mb-1">10 Day Replacement</h4>
-                                            <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
-                                                wafer cupcake.</p>
-                                        </div>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div class="w-75 mx-auto">
+                                        <i data-feather="clock"></i>
+                                        <h4 class="mt-2 mb-1">10 Day Replacement</h4>
+                                        <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
+                                            wafer cupcake.</p>
                                     </div>
-                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                        <div class="w-75 mx-auto">
-                                            <i data-feather="shield"></i>
-                                            <h4 class="mt-2 mb-1">1 Year Warranty</h4>
-                                            <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
-                                                sweet croissant.</p>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div class="w-75 mx-auto">
+                                        <i data-feather="shield"></i>
+                                        <h4 class="mt-2 mb-1">1 Year Warranty</h4>
+                                        <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
+                                            sweet croissant.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Hermes features ends -->
+                </div>
+                </section>
+                <!-- END: app e-commerce details -->
+            </div>
+            <!-- END: Content-->
+
+            <!-- BEGIN: Suscribe -->
+            <section id="pricing-plan"></section>
+            <div class="pricing-free-trial">
+                <div class="row">
+                    <div class="col-12 col-lg-10 col-lg-offset-3 mx-auto">
+                        <div class="pricing-trial-content d-flex justify-content-between">
+                            <div class="text-center text-md-start mt-3">
+                                <h3 class="text-primary">Proximamente lanzaremos nuestro <strong> Blog</strong></h3>
+                                <h5>¿Quíeres enterarte de novedades?</h5>
+                                <button class="btn btn-primary mt-2 mt-lg-3">Dejános tu correo</button>
+                            </div>
+
+                            <!-- image -->
+                            <img src="./app-assets/images/illustration/pricing-Illustration.svg"
+                                class="pricing-trial-img img-fluid" alt="svg img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!--/ END: Suscribe -->
+
+            <!-- BEGIN: Subtitulo-->
+            <section id="subtitulo">
+                <div class="row match-height">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Nuestros rituales</h4>
+                                <h3 class="card-text">Herramientas de sanación</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END: Subtitulo-->
+
+            <!-- BEGIN: Rituales Details-->
+            <div class="ecommerce-application">
+                <!-- app e-commerce details start -->
+                <section class="app-ecommerce-details">
+                    <!-- Limpieza Details starts -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="product row my-2">
+                                <div
+                                    class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="https://res.cloudinary.com/drl62fylt/image/upload/v1676035925/rituales_kiqmd2.jpg"
+                                            class="img-fluid product-img" alt="product image" />
+                                    </div>
+                                </div>
+                                <div class="product-information col-12 col-md-7">
+                                    <h3 class="titulo">Limpieza energética</h3>
+                                    <span class="card-text item-company">By <a href="#"
+                                            class="company-name">Ancestral</a></span>
+                                    <div class="ecommerce-details-price d-flex flex-wrap mt-1">
+                                        <h4 class="item-price me-1">$2399.99</h4>
+                                        <ul class="unstyled-list list-inline ps-1 border-start">
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="filled-star"></i></li>
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="filled-star"></i></li>
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="filled-star"></i></li>
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="filled-star"></i></li>
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="unfilled-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <p class="card-text">
+                                        <span class="text-success">en stock</span>
+                                    </p>
+                                    <p class="card-text">
+                                        GPS, Always-On Retina display, 30% larger screen, Swimproof, ECG app,
+                                        Electrical and optical heart sensors,
+                                        Built-in compass, Elevation, Emergency SOS, Fall Detection, S5 SiP with up
+                                        to 2x faster 64-bit dual-core
+                                        processor, watchOS 6 with Activity trends, cycle tracking, hearing health
+                                        innovations, and the App Store on
+                                        your wrist
+                                    </p>
+                                    <ul class="product-features list-unstyled">
+                                        <li><i data-feather="shopping-cart"></i> <span>envios a todo el país</span>
+                                        </li>
+                                        <li>
+                                            <i data-feather="dollar-sign"></i>
+                                            <span>descruentos por compras mayorista</span>
+                                        </li>
+                                    </ul>
+                                    <hr />
+                                    <div class="d-flex flex-column flex-sm-row pt-1">
+                                        <a href="#" class="btn btn-primary btn-cart me-0 me-sm-1 mb-1 mb-sm-0">
+                                            <i data-feather="shopping-cart" class="me-50"></i>
+                                            <span class="add-to-cart">Quiero la mía</span>
+                                        </a>
+                                        <div class="btn-group dropdown-icon-wrapper btn-share">
+                                            <button type="button"
+                                                class="btn btn-icon hide-arrow btn-outline-secondary dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i data-feather="share-2"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a href="#" class="dropdown-item">
+                                                    <i data-feather="instagram"></i>
+                                                </a>
+                                                <a href="#" class="dropdown-item">
+                                                    <i data-feather="youtube"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Helios features ends -->
                         </div>
-                    </section>
-                    <!-- app e-commerce details end -->
-                </div>
+                    </div>
+                    <!-- Limpieza Details ends -->
+
+                    <!-- Limpieza features starts -->
+                    <div class="item-features">
+                        <div class="row text-center">
+                            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                <div class="w-75 mx-auto">
+                                    <i data-feather="award"></i>
+                                    <h4 class="mt-2 mb-1">100% Original</h4>
+                                    <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
+                                        pie cookie halvah.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                <div class="w-75 mx-auto">
+                                    <i data-feather="clock"></i>
+                                    <h4 class="mt-2 mb-1">10 Day Replacement</h4>
+                                    <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
+                                        wafer cupcake.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                <div class="w-75 mx-auto">
+                                    <i data-feather="shield"></i>
+                                    <h4 class="mt-2 mb-1">1 Year Warranty</h4>
+                                    <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
+                                        sweet croissant.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Limpieza features ends -->
+
+                    <!-- Sanación Details starts -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="product row my-2">
+                                <div
+                                    class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="https://res.cloudinary.com/drl62fylt/image/upload/v1670800817/velaVI_epvwcv.jpg"
+                                            class="img-fluid product-img" alt="product image" />
+                                    </div>
+                                </div>
+                                <div class="product-information col-12 col-md-7">
+                                    <h3 class="titulo">Sanación espiritual</h3>
+                                    <span class="card-text item-company">By <a href="#"
+                                            class="company-name">Ancestral</a></span>
+                                    <div class="ecommerce-details-price d-flex flex-wrap mt-1">
+                                        <h4 class="item-price me-1">$2999.99</h4>
+                                        <ul class="unstyled-list list-inline ps-1 border-start">
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="filled-star"></i></li>
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="filled-star"></i></li>
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="filled-star"></i></li>
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="filled-star"></i></li>
+                                            <li class="ratings-list-item"><i data-feather="star"
+                                                    class="unfilled-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <p class="card-text">
+                                        <span class="text-success">en stock</span>
+                                    </p>
+                                    <p class="card-text">
+                                        GPS, Always-On Retina display, 30% larger screen, Swimproof, ECG app,
+                                        Electrical and optical heart sensors,
+                                        Built-in compass, Elevation, Emergency SOS, Fall Detection, S5 SiP with up
+                                        to 2x faster 64-bit dual-core
+                                        processor, watchOS 6 with Activity trends, cycle tracking, hearing health
+                                        innovations, and the App Store on
+                                        your wrist
+                                    </p>
+                                    <ul class="product-features list-unstyled">
+                                        <li><i data-feather="shopping-cart"></i> <span>envios a todo el país</span>
+                                        </li>
+                                        <li>
+                                            <i data-feather="dollar-sign"></i>
+                                            <span>descruentos por compras mayorista</span>
+                                        </li>
+                                    </ul>
+                                    <hr />
+                                    <div class="d-flex flex-column flex-sm-row pt-1">
+                                        <a href="#" class="btn btn-primary btn-cart me-0 me-sm-1 mb-1 mb-sm-0">
+                                            <i data-feather="shopping-cart" class="me-50"></i>
+                                            <span class="add-to-cart">Quiero la mía</span>
+                                        </a>
+                                        <div class="btn-group dropdown-icon-wrapper btn-share">
+                                            <button type="button"
+                                                class="btn btn-icon hide-arrow btn-outline-secondary dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i data-feather="share-2"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a href="#" class="dropdown-item">
+                                                    <i data-feather="instagram"></i>
+                                                </a>
+                                                <a href="#" class="dropdown-item">
+                                                    <i data-feather="youtube"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sanación Details ends -->
+
+                    <!-- Sanación features starts -->
+                    <div class="item-features">
+                        <div class="row text-center">
+                            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                <div class="w-75 mx-auto">
+                                    <i data-feather="award"></i>
+                                    <h4 class="mt-2 mb-1">100% Original</h4>
+                                    <p class="card-text">Chocolate bar candy canes ice cream toffee. Croissant
+                                        pie cookie halvah.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                <div class="w-75 mx-auto">
+                                    <i data-feather="clock"></i>
+                                    <h4 class="mt-2 mb-1">10 Day Replacement</h4>
+                                    <p class="card-text">Marshmallow biscuit donut dragée fruitcake. Jujubes
+                                        wafer cupcake.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                <div class="w-75 mx-auto">
+                                    <i data-feather="shield"></i>
+                                    <h4 class="mt-2 mb-1">1 Year Warranty</h4>
+                                    <p class="card-text">Cotton candy gingerbread cake I love sugar plum I love
+                                        sweet croissant.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sanación features ends -->
+                </section>
+                <!-- END: app e-commerce details -->
             </div>
             <!-- END: Content-->
 
+            <section id="pricing-plan">
+                <!-- title text and switch button -->
+                <div class="text-center">
+                    <h1 class="mt-5">Suscripciones Plans</h1>
+                    <p class="mb-2 pb-75">
+                        Todos las suscripciones incluyen elementos para el armado de tu altar en 12 ciclos lunares.
+                    </p>
+                    <p class="mb-2 pb-75">
+                        Elige el plan que se adapta mejor a vos.
+                    </p>
+                    <div class="d-flex align-items-center justify-content-center mb-5 pb-50">
+                        <h6 class="me-1 mb-0">Mensual</h6>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="priceSwitch" />
+                            <label class="form-check-label" for="priceSwitch"></label>
+                        </div>
+                        <h6 class="ms-50 mb-0">Anual</h6>
+                    </div>
+                </div>
+                <!--/ title text and switch button -->
+
+                <!-- pricing plan cards -->
+                <div class="row pricing-card">
+                    <div class="col-12 col-sm-offset-2 col-sm-10 col-md-12 col-lg-offset-2 col-lg-10 mx-auto">
+                        <div class="row">
+                            <!-- basic plan -->
+                            <div class="col-12 col-md-4">
+                                <div class="card basic-pricing text-center">
+                                    <div class="card-body">
+                                        <img src="7./app-assets/images/illustration/Pot1.svg" class="mb-2 mt-5"
+                                            alt="svg img" />
+                                        <h3>Lunas Nuevas</h3>
+                                        <p class="card-text">A simple start for everyone</p>
+                                        <div class="annual-plan">
+                                            <div class="plan-price mt-2">
+                                                <sup class="font-medium-1 fw-bold text-primary">$</sup>
+                                                <span class="pricing-basic-value fw-bolder text-primary">4300</span>
+                                                <sub
+                                                    class="pricing-duration text-body font-medium-1 fw-bold">/month</sub>
+                                            </div>
+                                            <small class="annual-pricing d-none text-muted"></small>
+                                        </div>
+                                        <ul class="list-group list-group-circle text-start">
+                                            <li class="list-group-item">100 responses a month</li>
+                                            <li class="list-group-item">Unlimited forms and surveys</li>
+                                            <li class="list-group-item">Unlimited fields</li>
+                                            <li class="list-group-item">Basic form creation tools</li>
+                                            <li class="list-group-item">Up to 2 subdomains</li>
+                                        </ul>
+                                        <button class="btn w-100 btn-outline-success mt-2">Your current plan</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ basic plan -->
+
+                            <!-- standard plan -->
+                            <div class="col-12 col-md-4">
+                                <div class="card standard-pricing popular text-center">
+                                    <div class="card-body">
+                                        <div class="pricing-badge text-end">
+                                            <span class="badge rounded-pill badge-light-primary">Popular</span>
+                                        </div>
+                                        <img src="./app-assets/images/illustration/Pot2.svg" class="mb-1"
+                                            alt="svg img" />
+                                        <h3>Lunas Llenas</h3>
+                                        <p class="card-text">For small to medium businesses</p>
+                                        <div class="annual-plan">
+                                            <div class="plan-price mt-2">
+                                                <sup class="font-medium-1 fw-bold text-primary">$</sup>
+                                                <span class="pricing-standard-value fw-bolder text-primary">4900</span>
+                                                <sub
+                                                    class="pricing-duration text-body font-medium-1 fw-bold">/month</sub>
+                                            </div>
+                                            <small class="annual-pricing d-none text-muted"></small>
+                                        </div>
+                                        <ul class="list-group list-group-circle text-start">
+                                            <li class="list-group-item">Unlimited responses</li>
+                                            <li class="list-group-item">Unlimited forms and surveys</li>
+                                            <li class="list-group-item">Instagram profile page</li>
+                                            <li class="list-group-item">Google Docs integration</li>
+                                            <li class="list-group-item">Custom “Thank you” page</li>
+                                        </ul>
+                                        <button class="btn w-100 btn-primary mt-2">Upgrade</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ standard plan -->
+
+                            <!-- enterprise plan -->
+                            <div class="col-12 col-md-4">
+                                <div class="card enterprise-pricing text-center">
+                                    <div class="card-body">
+                                        <img src="app-assets/images/illustration/Pot3.svg" class="mb-2"
+                                            alt="svg img" />
+                                        <h3>Ciclos lunares</h3>
+                                        <p class="card-text">Solution for big organizations</p>
+                                        <div class="annual-plan">
+                                            <div class="plan-price mt-2">
+                                                <sup class="font-medium-1 fw-bold text-primary">$</sup>
+                                                <span
+                                                    class="pricing-enterprise-value fw-bolder text-primary">6900</span>
+                                                <sub
+                                                    class="pricing-duration text-body font-medium-1 fw-bold">/month</sub>
+                                            </div>
+                                            <small class="annual-pricing d-none text-muted"></small>
+                                        </div>
+                                        <ul class="list-group list-group-circle text-start">
+                                            <li class="list-group-item">PayPal payments</li>
+                                            <li class="list-group-item">Logic Jumps</li>
+                                            <li class="list-group-item">File upload with 5GB storage</li>
+                                            <li class="list-group-item">Custom domain support</li>
+                                            <li class="list-group-item">Stripe integration</li>
+                                        </ul>
+                                        <button class="btn w-100 btn-outline-primary mt-2">Upgrade</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ enterprise plan -->
+                        </div>
+                    </div>
+                </div>
+                <!--/ pricing plan cards -->
+            </section>
 
         </div>
-    </div>
+        <!-- END: Content-->
+
     </div>
     <!-- END: App Content-->
 

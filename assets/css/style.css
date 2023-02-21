@@ -43,9 +43,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 }
 
 #vision {
-	background-color: #283046;
 	text-align: center;
-	color: #7367f0;
 }
 #vision .card-header {
 	padding: 0;
@@ -56,12 +54,18 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	padding-top: 0;
 	padding-bottom: 2%;
 }
-#vision .card-title {
+#vision .card-title{
 	text-align: center;
-	color: #faf8f7;
+	color: #283046;
 }
+#vision .card-text {
+	text-align: center;
+	color: #7367f0;
+}
+
 #mision {
 	text-align: center;
+    color: #7367f0;
 }
 #mision .card-header {
 	padding: 0;
@@ -72,9 +76,13 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	padding-top: 0;
 	padding-bottom: 2%;
 }
-#mision .card-title {
+#mision .card-title{
 	text-align: center;
 	color: #283046;
+}
+#mision .card-text {
+	text-align: center;
+	color: #7367f0;
 }
 #mision .card-body .card-text .alert{
 	width: 90%;
@@ -84,15 +92,6 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 }
 #mision .card-body .card-text .alert .alert-body .text-primary strong{
 	color: #faf8f7;
-}
-
-#video .video{
-	width: 100%;
-	min-width: 288px;
-	max-width: 90%;
-	max-height: 550px;
-	margin: 0 auto;
-	align-self: center;
 }
 
 .ecommerce-application .app-ecommerce-details .item-features {
@@ -107,8 +106,14 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
     color: #7367f0;
 }
 
-.ecommerce-application .app-ecommerce-details .card .card-body .product .product-information .nombre {
-	font-size: 2.9 rem;
+.ecommerce-application .app-ecommerce-details .card .card-body .product .nombre {
+    position: absolute;
+    top: -31px;
+    font-size: calc(2.7rem + 2vw);
+    font-weight: bold;
+    color: #F4CC70;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
 }
 
 #subtitulo {
@@ -123,7 +128,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	text-align: center;
 	font-size: calc(1rem + 4vw);
 	font-weight: bold;
-	color: #F4CC70;
+	color: #283046;
 	font-family: 'Dancing Script', cursive;
 }
 
@@ -131,5 +136,47 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	text-align: center;
 	font-size: calc(0.5rem + 3vw);
 	font-weight: bold;
+	color: #bababa;
+}
+
+.pricing-free-trial {
+    height: 16.71rem;
+    background-color: rgba(186, 191, 199, 0.12);
+    margin-right: -2rem;
+    margin-left: -2rem;
+    margin-top: 7.5rem;
+    margin-bottom: 6.3rem;
+}
+.pricing-free-trial .row {
+    margin: 0;
+}
+.pricing-free-trial .pricing-trial-content {
+	padding: 0 1rem;
+}
+.pricing-free-trial .pricing-trial-content .pricing-trial-img {
+    position: relative;
+    top: -3.1rem;
+}
+
+.ecommerce-application .app-ecommerce-details .card .card-body .product .titulo {
+    position: absolute;
+    top: -16px;
+    font-size: calc(1.9rem + 2vw);
+    font-weight: bold;
+    color: #F4CC70;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+#suscription .card-body .card-title {
+	position: absolute;
+	left: 30px;
+	bottom: -29%;
+	width: calc(100% - 60px);
+	padding: 6px;
+	text-align: center;
+	font-size: calc(1rem + 4vw);
+	font-weight: bold;
 	color: #283046;
+	font-family: 'Dancing Script', cursive;
 }
