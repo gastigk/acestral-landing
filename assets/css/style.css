@@ -10,31 +10,39 @@ NOTE:
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 
+
 /* Card Ancestral */
 #card-demo-example .card .card-img-top{
 	width: 100%;
-	min-width: 288px;
-	max-width: 718px;
-	max-height: 712px;
+	min-width: 188px;
+	max-width: 712px;
+	max-height: 550x;
 	margin: 0 auto;
 	text-align: center;
 	align-self: center;
+	margin-bottom: 50px;
 }
 
 #card-demo-example .card-body .card-title {
+	border-radius: 10px;
+	position: absolute;
+	left: 40px;
+	bottom: 1%;
+	width: calc(100% - 80px);
+	text-align: center;
+	font-size: calc(2rem + 7vw);
+	font-weight: bold;
+	color: #F58A47;
+	background-color: #28304661;
+	font-family: 'Dancing Script', cursive;
+}
+
+#card-demo-example .card-body .card-text-top .card-text {
 	position: absolute;
 	left: 40px;
 	bottom: 1%;
 	width: calc(100% - 80px);
 	padding: 6px;
-	text-align: center;
-	font-size: calc(2rem + 7vw);
-	font-weight: bold;
-	color: #F4CC70;
-	font-family: 'Dancing Script', cursive;
-}
-
-#card-demo-example .card-body .card-text {
 	text-align: center;
 	font-size: calc(0.5rem + 3vw);
 	font-weight: bold;
@@ -44,54 +52,50 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 
 #vision {
 	text-align: center;
+	background-color: #28304661;
 }
 #vision .card-header {
 	padding: 0;
 	padding-top: 2%;
 }
 #vision .card-body {
-	padding: auto;
-	padding-top: 0;
-	padding-bottom: 2%;
+	width: 90%;
+	margin: 0 auto;
+	padding: 1%;
+
+	border-radius: 16px;
 }
 #vision .card-title{
 	text-align: center;
 	color: #283046;
+	font-size: calc(0.7rem + 2vw);
 }
 #vision .card-text {
 	text-align: center;
-	color: #7367f0;
+	color: #283046;
 }
 
 #mision {
 	text-align: center;
-    color: #7367f0;
 }
 #mision .card-header {
 	padding: 0;
 	padding-top: 2%;
 }
 #mision .card-body {
-	padding: auto;
-	padding-top: 0;
-	padding-bottom: 2%;
+	width: 90%;
+	margin: 0 auto 10px auto;
+	background-color: #28304661;
+	border-radius: 16px;
 }
 #mision .card-title{
 	text-align: center;
 	color: #283046;
+	font-size: calc(0.7rem + 2vw);
 }
 #mision .card-text {
 	text-align: center;
-	color: #7367f0;
-}
-#mision .card-body .card-text .alert{
-	width: 90%;
-	margin: 0 auto;
-	background-color: #283046;
-	color: #F4CC70;
-}
-#mision .card-body .card-text .alert .alert-body .text-primary strong{
-	color: #faf8f7;
+	color: #283046;
 }
 
 .ecommerce-application .app-ecommerce-details .item-features {
@@ -111,15 +115,17 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
     top: -31px;
     font-size: calc(2.7rem + 2vw);
     font-weight: bold;
-    color: #F4CC70;
+    color: #F58A47;
     font-family: 'Dancing Script', cursive;
     text-align: center;
 }
 
-#subtitulo {
+#velas,
+#rituales {
 	margin-top: 30px;
 }
-#subtitulo .card-body .card-title {
+#velas .card-body .card-title,
+#rituales .card-body .card-title {
 	position: absolute;
 	left: 30px;
 	bottom: 33%;
@@ -132,12 +138,14 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	font-family: 'Dancing Script', cursive;
 }
 
-#subtitulo .card-body .card-text {
+#velas .card-body .card-text,
+#rituales .card-body .card-text{
 	text-align: center;
 	font-size: calc(0.5rem + 3vw);
 	font-weight: bold;
-	color: #bababa;
+	color: #28304661;
 }
+
 
 .pricing-free-trial {
     height: 16.71rem;
@@ -163,7 +171,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
     top: -16px;
     font-size: calc(1.9rem + 2vw);
     font-weight: bold;
-    color: #F4CC70;
+    color: #F58A47;
     font-family: 'Dancing Script', cursive;
     text-align: center;
 }
@@ -179,4 +187,8 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	font-weight: bold;
 	color: #283046;
 	font-family: 'Dancing Script', cursive;
+}
+
+#pricing-plan .text-center {
+	color: #F58A47;
 }
